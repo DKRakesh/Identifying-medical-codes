@@ -34,3 +34,25 @@ The prediction of CUI for medical terms using the UMLS database is a valuable ta
 LIMITATIONS OF THIS APPROACH:
 
 With the given query, the system aims to output the most similar query, which may or may not be an exact match. This prediction is based on the Unified Medical Language System (UMLS) feature. It is important to note that a single medical entity can relate to more than one Concept Unique Identifier (CUI) within the UMLS database.
+
+Details of system:
+
+Start: Main.java
+
+A11_File_Modify.java : Code to modify lemma file a/q to requirement, Separating Document and making separate document a/q to problem type.
+
+B11_Extract_sui.java : Extracting SUI from corresponding lemma
+
+C11_Nove_8.java : Calculation of cosine from SUI extracted file	
+
+A21_Extract_SUI.java : Extracting only those SUI whose entities are present in Test file from different files, Frequency Rank file, CUI Rank file, and TUI Type Rank.
+
+C21_Rabk1andRank2Scoring.java : Combining Rank1 aND rANK2 scoring
+
+D21_Rank3Score.java: Creation of Rank3 
+
+E21_Rank123.java : Combining Rank 1, 2, and 3.
+
+F21_Entity_to_cui.java : Final system
+
+G21_Accuracy_check.java: Accuracy check of the model.
