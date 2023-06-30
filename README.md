@@ -29,3 +29,8 @@ For the CUI "C0001973" representing Alcoholism, examples of related terms includ
 
 Conclusion:
 The prediction of CUI for medical terms using the UMLS database is a valuable task in the field of healthcare and information retrieval. By leveraging concepts, identifiers, and document similarity, the developed system can enhance the understanding and classification of medical terms, contributing to improved medical knowledge management.
+
+
+LIMITATIONS OF THIS APPROACH:
+
+With the given query, the system aims to output the most similar query, which may or may not be an exact match. This prediction is based on the Unified Medical Language System (UMLS) feature. It is important to note that a single medical entity can relate to more than one Concept Unique Identifier (CUI) within the UMLS database.
